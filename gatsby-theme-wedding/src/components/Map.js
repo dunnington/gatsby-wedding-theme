@@ -57,19 +57,18 @@ function Map() {
   const {
     event: { events }
   } = useStaticQuery(QUERY);
+  const maps = events.map(event => event.occasion.place.map);
   return (
     <Container>
       <MapContainer>
-        <GoogleMap
-          src={events[0].occasion.place.map}
-          frameBorder="0"
-          allowfullscreen=""
-        ></GoogleMap>
-        <GoogleMap
-          src={events[1].occasion.place.map}
-          frameBorder="0"
-          allowfullscreen=""
-        ></GoogleMap>
+        {maps.map(map => (
+          <GoogleMap
+            key={map}
+            src={map}
+            frameBorder="0"
+            allowfullscreen=""
+          ></GoogleMap>
+        ))}
       </MapContainer>
       <TextContainer>
         <Heading {...animationParams}>When & Where</Heading>

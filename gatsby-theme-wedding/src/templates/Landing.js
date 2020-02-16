@@ -17,7 +17,7 @@ const Landing = () => {
       <SEO />
       <Layout>
         <Cover />
-        <Profile />
+        {/* <Profile /> */}
         <CountdownSection />
         <Map />
       </Layout>

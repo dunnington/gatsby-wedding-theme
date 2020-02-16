@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown-now";
 import { graphql, useStaticQuery } from "gatsby";
+import { parse } from "date-fns";
 
 import backgroundImg from "../images/background.jpg";
 import CountItem from "./CountItem";
@@ -49,6 +50,9 @@ const QUERY = graphql`
     event {
       events {
         title
+        occasion {
+          time
+        }
       }
     }
   }
@@ -58,6 +62,13 @@ function CountdownSection() {
   const {
     event: { events }
   } = useStaticQuery(QUERY);
+  const date = parse(
+    `${events[0].title} ${events[0].occasion.time}`,
+    "MMMM do, yyyy h:mb",
+    new Date()
+  );
+  console.log(date);
+  console.log(`${events[0].title} ${events[0].occasion.time}`);
   return (
     <Container>
       <TitleContainer>
@@ -67,7 +78,7 @@ function CountdownSection() {
         </Subtitle>
       </TitleContainer>
       <Countdown
-        date={new Date(events[0].title)}
+        date={date}
         renderer={({ days, hours, minutes, seconds, completed }) => {
           if (completed) {
             return <p>Done.</p>;

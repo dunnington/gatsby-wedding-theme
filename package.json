@@ -2,10 +2,9 @@
   "name": "gatsby-wedding-theme-workspace",
   "private": true,
   "version": "0.0.1",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspace example build"
+    "build": "yarn workspace wedding-site build"
   },
   "husky": {
     "hooks": {
@@ -14,7 +13,7 @@
   },
   "workspaces": [
     "gatsby-theme-wedding",
-    "example"
+    "wedding-site"
   ],
   "devDependencies": {
     "husky": "^3.0.9",
@@ -23,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/agneym/gatsby-wedding-theme"
+    "url": "https://github.com/dunnington/gatsby-wedding-theme"
   }
 }

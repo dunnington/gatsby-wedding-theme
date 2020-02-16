@@ -23,20 +23,22 @@ const Link = styled.a`
 function AddToCalendar({ google, outlook }) {
   return (
     <Container>
-      <p>Add to your Calendar:</p>
-      <Link target="_blank" rel="noopener noreferrer" href={google}>
+      <Link href="/invite.ics">Add to your Calendar</Link>
+      {/* <Link target="_blank" rel="noopener noreferrer" href={google}>
         Google
-      </Link>
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href={outlook}
-        css={`
-          margin-left: 0;
-        `}
-      >
-        Outlook
-      </Link>
+      </Link> */}
+      {outlook && (
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href={outlook}
+          css={`
+            margin-left: 0;
+          `}
+        >
+          Outlook
+        </Link>
+      )}
     </Container>
   );
 }
