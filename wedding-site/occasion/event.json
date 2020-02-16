@@ -1,0 +1,37 @@
+{
+  "profiles": [
+    {
+      "name": "Melanie",
+      "description": "I live my whole life setting up situations that will eventually lead to the phrase, “And then laughter and hilarity ensued…” Hoping this one will work out too.",
+      "links": {
+        "instagram": "https://instagram.com/samantha/",
+        "facebook": "https://www.facebook.com/samantha"
+      }
+    },
+    {
+      "name": "Ken",
+      "description": "According to my 9th grade report card I’m a “hard working conscientious student” who is also “easily distracted in class”. What can I say? I do my homework but I also tend to daydream. Pretty much sums up who I still am today.",
+      "links": {
+        "instagram": "https://instagram.com/nathaniel",
+        "facebook": "https://www.facebook.com/nathaniel"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "August 15th, 2020",
+      "occasion": {
+        "name": "Ceremony, Reception, and Party!",
+        "place": {
+          "name": "The Cushing House, Dover, NH",
+          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.7500025544764!2d-70.8840337488866!3d43.193756179037294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e29718caac1fb3%3A0x2481d23418856cc8!2s230%20Washington%20St%2C%20Dover%2C%20NH%2003820!5e0!3m2!1sen!2sus!4v1580179278571!5m2!1sen!2sus"
+        },
+        "time": "12:00PM"
+      },
+      "calendar": {
+        "google": "https://www.google.com/calendar/render?action=TEMPLATE&text=Ken+and+Melanie%27s+Wedding&details=Ceremony%2C+Reception%2C+and+Party%21&location=230+Washington+St.%0ADover%2C+NH+03820&dates=20200815T170000Z%2F20200815T210000Z",
+        "outlook": ""
+      }
+    }
+  ]
+}
